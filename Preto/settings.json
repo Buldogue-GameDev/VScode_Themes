@@ -1,0 +1,187 @@
+{
+    // **Guias** e linhas de indentação personalizadas
+    "editor.guides.indentation": true,                // Exibe guias de indentação
+    "editor.guides.bracketPairs": true,               // Exibe pares de colchetes combinados
+
+    // **Destaques** visuais e **tema** escuro
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",              // **Fundo** preto
+        "editor.foreground": "#D6D6D6",              // **Texto** prata
+        "editorCursor.foreground": "#FF4500",        // **Cursor** cornalina
+        "editorLineNumber.foreground": "#D6D6D6",    // **Números** de linha prata
+        "editorLineNumber.activeForeground": "#FF4500", // **Número** da linha ativa cornalina
+
+        // **Linhas** de indentação com **cores** vivas
+        "editorIndentGuide.background1": "#E74C3C",   // **Escarlate** forte
+        "editorIndentGuide.background2": "#3498DB",   // **Azul** celeste
+        "editorIndentGuide.background3": "#27AE60",   // **Verde** reluzente
+        "editorIndentGuide.background4": "#F1C40F",   // **Dourado** brilhante
+        "editorIndentGuide.background5": "#9B59B6",   // **Violeta** intenso
+        "editorIndentGuide.activeBackground1": "#C0392B",  // **Carmim** mais escuro para a linha ativa
+        "editorIndentGuide.activeBackground2": "#2980B9",  // **Azul** marítimo para a linha ativa
+
+        // **Destaques** para pares de **colchetes**
+        "editorBracketHighlight.foreground1": "#E74C3C",   // **Escarlate** forte
+        "editorBracketHighlight.foreground2": "#2ECC71",   // **Verde** esmeralda
+        "editorBracketHighlight.foreground3": "#3498DB",   // **Azul** safira
+        "editorBracketHighlight.foreground4": "#F39C12",   // **Ouro** metálico
+        "editorBracketHighlight.foreground5": "#E91E63",   // **Rosa** vibrante
+        "editorBracketHighlight.unexpectedBracket.foreground": "#FF0000", // **Alerta** carmim para erros
+
+        // **Destaque** para a linha onde o **cursor** está
+        "editor.lineHighlightBackground": "#2E2E2E", // **Fundo** escuro para a linha atual
+        "editor.lineHighlightBorder": "#FF9800",     // **Borda** laranja queimado para a linha atual
+
+        // **Destaques** para **erros**, **avisos** e **informações**
+        "editorError.foreground": "#E74C3C",        // **Escarlate** para **erros**
+        "editorWarning.foreground": "#F39C12",      // **Ouro** para **avisos**
+        "editorInfo.foreground": "#3498DB",         // **Azul** céu para **informações**
+        "editorGutter.modifiedBackground": "#3498DB", // **Azul** safira para linhas modificadas
+        "editorGutter.addedBackground": "#27AE60",    // **Verde** reluzente para linhas adicionadas
+        "editorGutter.deletedBackground": "#E74C3C",  // **Escarlate** para linhas removidas
+        "editorGutter.commentRangeForeground": "#808080" // **Cinza** suave para **comentários** na gutter
+    },
+
+    // **Ajustes** de **espaçamento** e **visual**
+    "editor.lineHeight": 22, // **Espaçamento** extra entre linhas
+    "editor.renderLineHighlight": "gutter", // **Destaque** visível no lado esquerdo (gutter)
+    "editor.renderLineHighlightOnlyWhenFocus": true, // Mostra apenas com **foco** no editor
+
+    // **Personalização da seleção e marcações de texto**
+    "editor.selectionBackground": "#FFEB3B", // **Seleção** em amarelo suave
+    "editor.selectionForeground": "#000000", // **Cor** do texto selecionado em ébano
+    "editor.findMatchBackground": "#F39C12", // **Destaque de busca** dourado metálico
+    "editor.findMatchHighlightBackground": "#FFB84D", // **Destaque de busca secundária** laranja suave
+    "editor.selectionHighlightBackground": "#FFD700", // **Seleção em múltiplos locais** com dourado
+
+    // **Configurações** do minimapa
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false, // Exibe **blocos** no minimapa
+    "editor.minimap.maxColumn": 120, // **Limite** do minimapa para evitar excesso de detalhes
+    "editor.minimap.showSlider": "always", // **Exibe o controle deslizante** no minimapa
+    "editor.minimap.size": "fit", // Ajuste o minimapa para se adaptar ao conteúdo
+
+    // **Destaque** de **comentários** e **tokens** no **código**
+    "editor.tokenColorCustomizations": {
+        "comments": {
+            "foreground": "#007B00",   // **Verde floresta** para **comentários**
+            "fontStyle": "italic"      // **Comentários** em **itálico**
+        },
+        "keywords": {
+            "foreground": "#0000FF",   // **Azul** marinho para **palavras-chave**
+            "fontStyle": "bold"        // **Palavras-chave** em **negrito**
+        },
+        "variables": {
+            "foreground": "#1F618D"    // **Azul escuro** para **variáveis**
+        },
+        "strings": {
+            "foreground": "#2ECC71",    // **Verde** primavera para **strings**
+            "fontStyle": "italic"       // **Strings** em **itálico**
+        },
+        "numbers": {
+            "foreground": "#F4D03F"    // **Amarelo** brilhante para **números**
+        },
+        "functions": {
+            "foreground": "#9B59B6",  // **Violeta** intenso para **funções**
+            "fontStyle": "bold"       // **Funções** em **negrito**
+        },
+        "types": {
+            "foreground": "#17A589",      // **Turquesa** forte para **tipos** e **classes**
+            "fontStyle": "bold"           // **Tipos** em **negrito**
+        },
+        "textMateRules": [
+            {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#FF00EE", // **Magenta** forte para **parâmetros** de **função**
+                    "fontStyle": "bold"      // **Parâmetros** em **negrito**
+                }
+            },
+            {
+                "scope": "entity.name.function",
+                "settings": {
+                    "foreground": "#8E44AD", // **Violeta** para **nomes** de **funções**
+                    "fontStyle": "bold"      // **Funções** em **negrito**
+                }
+            },
+            {
+                "scope": "support.type",
+                "settings": {
+                    "foreground": "#138D75", // **Verde esmeralda** para **tipos** de **dados**
+                    "fontStyle": "bold"      // **Tipos** em **negrito**
+                }
+            },
+            {
+                "scope": "entity.name.class",
+                "settings": {
+                    "foreground": "#FF6347", // **Tomate** para **nomes de classes**
+                    "fontStyle": "bold"      // **Classes** em **negrito**
+                }
+            },
+            {
+                "scope": "constant.numeric",
+                "settings": {
+                    "foreground": "#F39C12", // **Ouro** vibrante para **números**
+                    "fontStyle": "bold"      // **Números** em **negrito**
+                }
+            },
+            {
+                "scope": "string.quoted.double, string.quoted.single",
+                "settings": {
+                    "foreground": "#bd2525", // **Carmim** para **strings**
+                    "fontStyle": "italic"    // **Strings** em **itálico**
+                }
+            },
+            {
+                "scope": "comment",
+                "settings": {
+                    "foreground": "#007B00", // **Verde floresta** para **comentários**
+                    "fontStyle": "italic"   // **Comentários** em **itálico**
+                }
+            },
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#D6D6D6" // **Prata** para **variáveis** globais em fundo escuro
+                }
+            },
+            {
+                "scope": "variable.other.local",
+                "settings": {
+                    "foreground": "#FF69B4", // **Rosa** para **variáveis locais**
+                    "fontStyle": "bold"      // **Variáveis locais** em **negrito**
+                }
+            },
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "foreground": "#c7004c", // **Magenta** para **tipos de dados**
+                    "fontStyle": "bold"      // **Tipos de dados** em **negrito**
+                }
+            },
+            {
+                "scope": "keyword.control",
+                "settings": {
+                    "foreground": "#FF4500", // **Laranja queimado** para **palavras-chave de controle**
+                    "fontStyle": "bold"      // **Palavras-chave de controle** em **negrito**
+                }
+            },
+            {
+                "scope": "constant.language",
+                "settings": {
+                    "foreground": "#8BC34A", // **Verde claro** para **constantes booleanas** (True/False)
+                    "fontStyle": "bold"      // **Constantes booleanas** em **negrito**
+                }
+            },
+            {
+                "scope": "punctuation",
+                "settings": {
+                    "foreground": "#FF007F", // **Rosa forte** para **todos os sinais e símbolos**
+                    "fontStyle": "bold"      // **Sinais e símbolos** em **negrito**
+                }
+            }
+        ]
+    },
+    "workbench.colorTheme": "Default Dark Modern",  // **Tema escuro**
+    "workbench.iconTheme": "material-icon-theme"    // **Tema de ícones**
+}
